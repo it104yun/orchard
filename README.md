@@ -1,4 +1,8 @@
-
+<style>
+.demo-title {
+  color: green;
+}
+</style>
 
 # <font color="blue">專案 : orchard / 小農的果園</font>
 <a href="https://lengthiest-cent.000webhostapp.com/orchard/">https://lengthiest-cent.000webhostapp.com/orchard/</a>   
@@ -49,7 +53,7 @@ Demo Account : demomap/123456Aa
 :::
 # 簡易畫面展示
 <ol>
-    <li>## 首頁<br>
+    <li><span class="demo-title">首頁</span><br>
         前端展現技術: Bootstrap Carousel
         <img src="gitDemo/gitDemo1.JPG">
     </li>
