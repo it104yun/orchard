@@ -44,7 +44,7 @@ Demo Account : demomap/123456Aa
  |2| ...     |||
  |3| ...     |||
 
-
+---
 # 簡易畫面展示
 
 ### 1. 首頁
@@ -88,3 +88,5 @@ Demo Account : demomap/123456Aa
         前端展現技術: JavaScript,VUE3(前端框架),axios
         後端展現技術: php,SQL
 <img src="gitDemo/gitDemo8.JPG">
+
+---
