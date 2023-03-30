@@ -60,7 +60,7 @@ Demo Account : demomap/123456Aa
 <img src="gitDemo/gitDemo3.JPG">
 
 ### 4. 會員管理:簡易資料
-        前端展現技術: Bootstrap ACCORDION搭配table搭配form
+        前端展現技術: Bootstrap modal搭配table、form、switch
         前端展現技術: JavaScript,jQuery,AJAX
         後端展現技術: php,SQL
 <img src="gitDemo/gitDemo4.JPG">
