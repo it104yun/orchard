@@ -1,9 +1,8 @@
-<span style="color:#ff4000;font-size:40px;font-weight:700;text-align: center;">專案 : orchard / 小農的果園</span>
-<span style="text-align:center">
-    <a href="https://lengthiest-cent.000webhostapp.com/orchard/">https://lengthiest-cent.000webhostapp.com/orchard/</a>
-    <br>
-    Demo Account : demomap/123456Aa
-</span>
+
+
+# <font color="blue">專案 : orchard / 小農的果園</font>
+<a href="https://lengthiest-cent.000webhostapp.com/orchard/">https://lengthiest-cent.000webhostapp.com/orchard/</a>   
+Demo Account : demomap/123456Aa
 
 ## 願景:蒐集小果農的有機水果, 共同上架販賣平台。
 ## 作者:蘇麗雲 Sophia.liyun
@@ -47,9 +46,10 @@
  |2| ...     |||
  |3| ...     |||
 
-<span style="color:#ff4000;font-size:36px;font-weight:700;text-align: center;letter-spacing:5px;"><u>簡易畫面展示</u></span>
-<ol style="color:green;font-size:20px;font-weight:700;">
-    <li><u style="font-size:24px;background-color:#ffff00">首頁</u><br>
+:::
+# <font style="color:#ff4000"><u>簡易畫面展示</u></font>
+<ol>
+    <li><font style="background:#ffff00;color:blue;"><首頁</font><br>
         前端展現技術: Bootstrap Carousel
         <img src="gitDemo/gitDemo1.JPG">
     </li>
