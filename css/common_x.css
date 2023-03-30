@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    /* color map                 -------------------------begin   */
+    --pitaya:#D4057C;
+    --tangerine :#F29A02
+    /* color map                 -------------------------ending   */
+}
+
+
+.gf {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.gfw100{
+    font-weight: 100;
+}
+
+.gfw300{
+    font-weight: 300;
+}
+
+.gfw400{
+    font-weight: 400;
+}
+
+.gfw500{
+    font-weight: 500;
+}
+
+.gfw700{
+    font-weight: 700;
+}
+
+.gfw900{
+    font-weight: 900;
+}
+
+.bgi {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 640px;
+}
+
+/* rgb a:alpha(透明度0~1,數字越大, 越不透明) */
+.carousel-caption {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.carousel-button{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background-color: black;
+    border: 6px solid white;
+}
+
+.pityta-box{
+    text-align: center;
+    border:0.25px solid var(--pitaya);
+    border-radius: 20px;
+    color: var(--pitaya);
+    padding: 0;
+    margin: 0;
+}
+
+.pityta-name{
+    background-color: var(--pitaya);
+    border-radius: 17px 17px 0 0;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 24px;
+    line-height: 48px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+
+.pityta-cart-btn{
+    background-color: var(--pitaya);
+    opacity: 0.75;
+    border-radius: 0 0 17px 17px ;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 24px;
+    line-height: 48px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    color: whitesmoke;
+}
+
+.pityta-cart-btn:hover{
+    opacity: 1;
+    font-weight: 700;
+    color: white;
+}
+
+
+.tangerine-box{
+    text-align: center;
+    border: 0.25px solid var(--tangerine);
+    border-radius: 20px;
+    color: var(--tangerine);
+    padding: 0;
+    margin: 0;
+}
+
+.tangerine-cart-btn{
+    background-color: var(--tangerine);
+    opacity: 0.75;
+    border-radius:  0 0 17px 17px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 48px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 100;
+    color: whitesmoke;
+}
+
+.tangerine-cart-btn:hover{
+    opacity: 1;
+    font-weight: 700;
+    color: white;
+}
+
+
+.tangerine-name{
+    background-color: var(--tangerine);
+    border-radius: 17px 17px 0 0;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 24px;
+    line-height: 48px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    color: white;
+}

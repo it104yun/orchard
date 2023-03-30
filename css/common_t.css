@@ -1,0 +1,77 @@
+
+@media screen and (max-width: 768px) {
+    /* com : common 通用類別   ---------------------begin---- */
+    .table-rwd-com thead {
+        display : none;
+    }
+
+    .table-rwd-com tbody tr {
+        display : block;
+    }
+
+    .table-rwd-com tbody td{
+        display : block;
+    }
+
+    .table-rwd-com tbody tr td:before{
+        content : attr(data-th) "    ";
+    }
+    /* com : common 通用類別   ---------------------ending---- */
+
+    /* mod : modal裏的表格   -----------------------begin----  */
+    /* .table-rwd-mod thead {
+        display : none;
+    } */
+
+    .table-rwd-mod tbody tr {
+        display : block;
+    }
+
+    .table-rwd-mod tbody td{
+        display : block;
+    }
+    /* mod : modal裏的表格   -----------------------ending----  */
+}
+
+
+/* 小於992px */
+@media screen and (max-width: 992px) {
+    /* mod : modal裏的表格   -----------------------begin----  */
+    .table-rwd-mod-r tbody tr {
+        display : block;
+        border: none;
+    }
+
+    .table-rwd-mod-r tbody td{
+        display : block;
+        border : none;
+        border: 5px groove navy;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+    .table-rwd-mod-c tbody tr {
+        display : block;
+        border: none;
+    }
+
+    .table-rwd-mod-c tbody td{
+        display : block;
+        border:none;
+    }
+
+    /* mod : modal裏的表格   -----------------------ending----  */
+}
+
+
+/* 大於992px */
+@media screen and (min-width: 992px) {
+    .w-lg-50 {
+        width:45%;
+    }
+}
+
+.start-25 {
+    position: absolute;
+}
+

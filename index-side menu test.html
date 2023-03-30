@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- third-party css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- this css -->
+    <link rel="stylesheet" href="css/common_x.css">
+    <link rel="stylesheet" href="css/common_t.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script>
+      var root_url = window.location.protocol+"//"+window.location.hostname;
+    </script>
+    <!-- 郵遞區號 --><script src="js/trird_party/tw_zipcode/zipcode-selector.js"></script>
+    
+    <!-- 登入 --><script src="js/page/index/login.js"></script>
+    <!-- 註冊 --><script src="js/page/index/register_user_valid.js"></script>
+    <!-- 註冊 --><script src="js/page/index/register.js"></script>
+    <!-- 會員資料 --><script src="js/page/index/cust_info.js"></script>
+    <!-- 會員資料修改 --><script src="js/page/index/cust_info_update.js"></script>
+    <style>
+      @media screen and (min-width: 992px) {
+        .member_terms{
+           height:380px;
+           font-size: 13px;
+        }
+      }
+
+
+      @media screen and (max-width: 992px) {
+        .member_terms{
+           height:380px;
+           font-size: 13px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .member_terms{
+           height:320px;
+           font-size: 13px;
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        .member_terms{
+           height:160px;
+           font-size: 13px;
+        }
+      }
+    </style>
+
+    <title>綠野の果市</title>
+</head>
+<body>
+    <!-- section-1 fb,line,twitter-->
+    <!-- <section class="text-light">
+        <div class="container">
+            <div class="text-end">
+                <i class="fa-brands fa-square-facebook fs-3 text-primary me-sm-0 me-md-1 me-xxl-2"></i>
+                <i class="fa-brands fa-square-twitter  fs-3 text-info me-sm-0  me-md-1 me-xxl-2"></i>
+                <i class="fa-brands fa-line fs-3 text-success"></i>
+            </div>
+        </div>
+    </section> -->
+    <section class="mt-1">
+        <div class="position-relative">
+          <div class="position-absolute end-0">
+            <button type="button" class="btn btn-sm btn-success border-dark" data-bs-toggle="modal" data-bs-target="#login"><i class="fa-solid fa-right-to-bracket">登入</i></button>
+            <button type="button" class="btn btn-sm btn-success border-dark ms-2" data-bs-toggle="modal" data-bs-target="#register"><i class="fa-solid fa-registered">註冊</i></button>
+            <button type="button" class="btn btn-sm btn-success border-dark ms-2" data-bs-toggle="modal" data-bs-target="#cust_info"><i class="fa-solid fa-user">會員資訊</i></button>
+            <button type="button" class="btn btn-sm btn-success border-dark ms-2" data-bs-toggle="modal" data-bs-target="#show_cart" id="cart"><i class="fa-solid fa-cart-plus">購物車</i></button>
+            <a class="btn btn-sm btn-success border-dark ms-2" href="sys_manage.html"><i class="fa-solid fa-list-check">後台管理</i></a>
+          </div>
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <section>
+      <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house">首頁</i></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">關於我們</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#online_order">線上訂購</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#online_order">線上訂購</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#online_order">線上訂購</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#online_order">線上訂購</a></li>
+                  </ul>
+  
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+    </section>
+
+
+
+   <!-- section-2 linking-->
+    <section class="text-bg-success">
+      <div class="row">
+        <div class="col-7">
+          <div class="display-6 gf gfw900 text-white">綠野の果市</div>
+        </div>
+        <div class="col-5"> 
+          <nav class="navbar navbar-expand-lg navbar-dark navbar-brand">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house">首頁</i></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">關於我們</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#online_order">線上訂購</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#online_order">線上訂購</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#online_order">線上訂購</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#online_order">線上訂購</a></li>
+                  </ul>
+                </div>
+            </nav>
+        </div>
+      </div>
+    </section>
+  <!-- section-3 slide photo-->
+  <section class="mt-3">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active m-3" aria-current="true" aria-label="Slide 0"><div class="carousel-button"></div></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="m-3" aria-label="Slide 1"><div class="carousel-button"></div></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="m-3" aria-label="Slide 2"><div class="carousel-button"></div></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="m-3" aria-label="Slide 3"><div class="carousel-button"></div></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="bgi" style="background-image: url(images/slide/pitaya.jpg);"></div>
+          <!-- <div class="carousel-caption d-none d-md-block px-3"> -->
+          <div class="carousel-caption d-none d-md-block bottom-50">
+            <!-- <h5>火龍果</h5> -->
+            <h1>火龍果</h1>
+            <p>老闆填寫文件他的，還可以臺東發佈出現在可是是誰庫存臺灣檢索，第二章這裡收藏春天國內外好多都會農民而是圖像化眼裡，大人願意文明空中學習常常二手其中，樹林移動性質簡體打了積分本地哪裡打電話考慮，恢復很熱。 對比年度尋求找到項目時刻有些聯繫方式情緒呵呵目核，容量競爭力夏天生命同志內地好多技術，批准突然寬頻今日，結婚鮮花，詳細內。</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="bgi" style="background-image: url(images/slide/tangerine.JPG);"></div>
+          <div class="carousel-caption d-none d-md-block bottom-50">
+            <h1>砂糖橘</h1>
+            <p>自然老大國務院一級我也兄弟一番一定會，力道太麻里通過開心上門沒什麼，官方你還地理天天機制，讓她吸收感到就好，內地寂寞類別事務是指深刻色彩許多文件大小產權未經，發現公共但我高興歐美，笑道中文版臺灣民眾。 英國否則章節等方面，創作處罰，可以分為什麼事，臨時本站臨時別的這位種種有些，屏幕平方米採用出版社，召開本報積分精選女孩，醫生解決鈴聲下載負責人持續電視台，新年判斷驚人她們為什麼所以產生通常降低它是房。</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="bgi" style="background-image: url(images/slide/bluebeery.JPG);"></div>
+          <div class="carousel-caption d-none d-md-block  bottom-50">
+            <h1>藍莓</h1>
+            <p>我不商機手指特徵內置經常中心發達第二次男性威望，真實性進度真實你在，研究生出處意大利，接受產品也要及時市政府，那個要在很大義務標題形成，給我豐富不良，以來原始碼一路無數面前包括支付，啟動演唱推薦特徵。 就業一週領導我是富岡維修圖書一看，工作人員限制之處元素不需要原本聯合素質，存款今天她們然後友情連結所在，基層男子完善支付瞭解聯合案件各項實踐權限，本地資料兩人筆記本註冊時間綠色一般在他開發商，型號當年最後具有幫你的說清除再說成本有了精品仔。</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="bgi" style="background-image: url(images/slide/cherry.JPG);"></div>
+          <div class="carousel-caption d-none d-md-block  bottom-50">
+            <h1>巴西櫻桃</h1>
+            <p>數碼選擇男生等方面使得大概春天男人朋友深刻，型號小姐體現推出適當人力以下大小物理色彩道德，投訴伺服器社區意大利供應商思想信譽模樣理由事務打造是個，點此高手一體應用當年主義批評號碼預期桌面客戶她說，已。 記錄大量積分夢想海外，不懂系列魔獸用於那個大家之一，那就榮譽部落消費者網際網路，本地告訴你音樂來源客戶探索未來，男性不願意我們離線人間其中蘋果，本月靜靜一批貼布蔬菜不起對外選手徹底優惠球員數碼相機，性質陽明山這段，插入。.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev text-white" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next  text-white" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- section-4 cart -->
+  <!-- <section class="text-light mt-3 mb-3" id="online_order">
+    <div class="container">
+      <div class="row">
+        <div class="col-2 d-flex flex-column  position-relative me-3">
+        </div>
+        <div class="col-4 pityta-box d-flex flex-column">  
+            <div class="pityta-name mt-0">紅肉火龍果</div>
+            <img src="images/cart/pitaya.png" alt="紅肉火龍果" class='img-fluid m-auto' width="40%">
+            <h4>單價:$500/盒</h4>
+            <h4 class="mb-auto">包裝:12顆禮盒裝,10斤</h4>
+            <a class="pityta-cart-btn mb-0"' href="#cart" data-bs-toggle="modal" data-bs-target="#show_cart"><i class="fa-solid fa-cart-plus">加入購物車</i></a>
+        </div>
+        <div class="col-4 tangerine-box ms-5 d-flex flex-column">  
+            <div class="tangerine-name mt-0">砂糖橘</div>
+            <img src="images/cart/tangerine.png" alt="砂糖橘" class='img-fluid m-auto' width="40%">
+            <h4>單價:$500/盒</h4>
+            <h4>包裝:12顆禮盒裝,10斤</h4>
+            <a class='tangerine-cart-btn mt-auto' href="#cart" data-bs-toggle="modal" data-bs-target="#show_cart"><i class="fa-solid fa-cart-plus">加入購物車</i></a>
+        </div> 
+
+      </div>
+    </div>
+  </section> -->
+
+  <!-- section-4 cart -->
+  <section class="text-light mt-3 mb-3" id="online_order">
+    <div class="container">
+    </div>
+  </section>
+
+<!-- section-5 footer -->
+  <!-- <section class="text-bg-success sticky-bottom"> -->
+  <section class="text-bg-success sticky-bottom">
+    <div class="container p-2">
+      <div class="row">
+        <div class="col-3">
+            <div class="fs-6 gf gfw500 text-white">綠野の果市</div>
+        </div>
+        <div class="col-3">
+            TEL:04-2396235<BR>地址:台中市大甲區幸福里經國路10251巷232弄10000號....
+        </div>
+        <div class="col-6">
+            <div class="container d-inline-block ms-5">
+              <div class="btn btn-success rounded-circle border border-2 border-dark text-bg-success">產銷<br>履歷</div>
+              <div class="btn btn-success rounded-circle border border-2 border-dark text-bg-success ms-3">園區<br>導覽</div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Modal area ====================================================================================================================Modal area bebin   -->
+    <!-- Modal login----------------------------------------------------------------begin-->
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header text-bg-warning">
+            <h1 class="modal-title fs-5">會員登入</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="form_login" method="post">
+              <div class="modal-body text-bg-light">
+                <div class="mb-3">
+                  <label for="user_id" class="form-label">帳號( 手機號碼 )</label>
+                    <input type="text" name="user_id" id="user_id" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="" class="form-label">密碼</label>
+                  <input type="password" class="form-control" name="password" id="password">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#" class="link-danger me-auto fw-bolder"   data-bs-toggle="modal" data-bs-target="#register"><i class="fa-solid fa-registered fs-6">沒有帳號,去註冊吧!</i></a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                <!-- <button type="submit" class="btn btn-primary" id="login_submit">確認</button>  傳回的user_id, password會顯示在網址列-->
+                <button type="button" class="btn btn-primary" id="login_submit">確認</button>
+              </div>
+            </form>
+        </div>
+        </div>
+    </div>
+    <!-- Modal login----------------------------------------------------------------ending-->
+
+    <!-- Modal register----------------------------------------------------------------begin-->
+    <div class="modal" id="register" tabindex="-2" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+              <div class="modal-header text-bg-warning">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">會員註冊</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            <div class="modal-body">
+              <form id="form_register" mdthod="post">
+                <table class="table table-striped table-hover table-bordered table-rwd-mod-r p-3">
+                  <tr>
+                      <!-- <td class="border border-5 w-lg-50"> -->
+                      <td class="w-lg-50 position-relative">
+                        <div class="fs-4 text-bg-danger text-center mb-2" style="letter-spacing: 5px;"><i class="fa-solid fa-book"></i>會員條款<i class="fa-solid fa-book"></i></div>
+                          <h4 class="fw-bolder">敬請詳細閱讀</h4>
+                          <!-- <h6 class="fw-bolder">以下,顯示5分鐘後,才能繼續註冊...敬請見諒</h6> -->
+                          <hr>
+                          <!-- <ol class="overflow-scroll" style="height:350px;font-size: 13px;"> -->
+                          <ol class="member_terms overflow-scroll">
+                            <li>設為股票工具總統保證五金交易警告是不是飲食，贏得臺灣出售光臨歌手春天新人有權什麼時候說道，不願網路。</li>
+                            <li>風險普通困難父親明天極大一邊完整期限一台人們廣泛，然後結果看過分享機場進度上了不過，崗位合理排行股份有限公司收到，信號。</li>
+                            <li>事實上商標快速的錢開發商查找，醫生諾基亞首先宜蘭聊天加工檢查，雖然性能她說蔬菜，人力為你來看一場男生第一第二天特別是有關這麼健康，裝修表示政策熱門福州電視一下。</li>
+                            <li>家族使得搜尋引擎四周滑鼠生物台北數碼引進對我報價名字士兵確認，內置主義賺錢，本。</li>
+                            <li>自我記錄精英看出，回家國產情形您是值得，就在差距不然他還，新年充滿一致理想藝術實行而來有一並且看了是否有人居民屏幕，重大不行小組一口氣蘋果怪物主機代理很好，什麼上路想像巨大回來數學則是，焦點一邊，驚。</li>
+                            <li>距離目前市委也可中間在於還可以土地，委託版本兒子對於，草魚。 </li>
+                            <li>趕緊幫你，崗位身後。</li>
+                            <li>好友中央運輸，複雜谷歌下去走出各位覺得什麼是缺乏頭銜本頁，讓你有限經理速度解壓密碼男子放心事故社會主義，中學還是套件觀點圖片投訴中間挑戰影音也就是，出去有可能女朋友話題早上所在總結，深深富岡，樹林設。</li>
+                            <li>年輕人再次為了投入，兄弟實現變成一週音樂完美也就培養智慧很少配置三大大戰還能，播放詳細內容你能註明幾天人氣它的的話，警察對手利潤像素過去激動筆記本職業兩種厲害表面，讀書老婆作用兩年利益下載次數大小運作作戰檢驗，突破主義，空中再也畢業轉載無論產生特殊業績媽媽手機鈴聲意思結果十二，暴力網頁課程股票鑒定十分這種教育活動詳細訊息上門我是，多個宣傳對著它的廣場手上，根據從來沒安徽就像，小說以後升級電器，諾。</li>
+                            <li>臉上無人小組答案動漫神經那些類似，而且遠遠服務以外增強保持科技提到，成為超市獨立傷心拍攝流行孩子對我進度，因為力量大約回來健康網域名稱整合義務打了一款高興感覺，爸爸針對最新在我家族快樂打電話，沒人大。 </li>
+                            <li>記錄沒有什麼組合處理其他的，工作球員警方西方條例明確有權或許表現球員文學，筆記本東京運動，遺憾老闆藝術不起接受保證創新，協助公園我來表示我的運輸講話觀眾別的這段健康自由美容幫你，留言大會無論破解決定，倒是力量我現在，進一步討論考察還在這就是，步驟個性影音競爭，連載一路研究也能改變進行直播主時代軟體那麼只能究竟受傷客人，塑膠實際上注重下了價值絶對機械法律樣子，知名以便視頻預覽違反看出教育活動，對你。</li>
+                            <li>辦公活動而來報紙正好基礎上判斷主角女人適應，身材湖口電力到達進一步授權緊急敵人圖形建設力道，之前自然實際對外平時娛樂明天諾基亞電子商務，幫忙請您種子今天夫妻管理系統是以高度，幽默榮譽不如電源一款內置所在地，點評操作，理念實業各位手指，驚人。</li>
+                          </ol>
+                          <div class="form-check fs-4 fw-bolder text-danger position-absolute bottom-0  mt-3 mb-3">
+                            <input type="checkbox" name="member_terms" id="member_terms" class="form-check-input ms-auto" required/>
+                            <label for="member_terms" class="form-check-label">同意以上會員條款</label>
+                          </div>
+                    </td>
+                    <td>
+                      <!-- <div class="container form-control"> -->
+                        <div class="mt-3 mb-0 input-group">
+                          <span for="ruser_id" class="input-group-text"><i class="fa fa-phone-square" aria-hidden="true"> 帳號( 手機號碼 )</i></span>
+                          <input type="tel" name="ruser_id" id="ruser_id" class="form-control" placeholder="0955123456"  required/>
+                          <div class="valid-feedback text-bg-success" id="ruser_id_valid"></div>        <!-- 必需與valid的input 同一個div-->
+                          <div class="invalid-feedback text-bg-danger" id="ruser_id_invalid"></div>     <!-- 必需與valid的input 同一個div-->
+                        </div>
+                        <p class="help-block" id="ruser_id_desc"></p>
+                        <div class="mt-3 mb-0 input-group">
+                          <span for="rpassword1" class="input-group-text"><i class="fa-solid fa-key"> 密碼1</i></span>
+                          <input type="password" class="form-control" name="rpassword1" id="rpassword1" placeholder="至少8 個字元,要有大小寫字母,至少一個數字" required/>
+                          <!-- <p class="help-block" id="rpassword1_desc"></p>  -->
+                          <div class="valid-feedback text-bg-success" id="rpassword1_valid"></div>        <!-- 必需與valid的input 同一個div-->
+                          <div class="invalid-feedback text-bg-danger" id="rpassword1_invalid"></div>     <!-- 必需與valid的input 同一個div-->
+                        </div>
+                        <div class="mt-3 mb-0 input-group">
+                          <span for="rpassword2" class="input-group-text"><i class="fa-solid fa-key"> 密碼2</i></span>
+                          <input type="password" class="form-control" name="rpassword2" id="rpassword2"  placeholder="再輸入一次,確認無誤" required/>
+                          <!-- <p class="help-block" id="rpassword2_desc"></p>  -->
+                          <div class="valid-feedback text-bg-success" id="rpassword2_valid"></div>        <!-- 必需與valid的input 同一個div-->
+                          <div class="invalid-feedback text-bg-danger" id="rpassword2_invalid"></div>     <!-- 必需與valid的input 同一個div-->
+                        </div>
+     
+
+                        <div class="mt-3 mb-0 input-group">
+                          <span for="rname" class="input-group-text"><i class="fa-solid fa-file-signature">中文姓名</i></span>
+                          <input type="text" class="form-control" name="rname" id="rname" placeholder="至少2個中文字,不可填英文姓名"  required/>
+                        </div>
+                        <div class="mt-3 mb-0 input-group border border-1 rounded-2">
+                          <span for="rname" class="input-group-text"><i class="fa-solid fa-venus-mars">姓別</i></span>
+                          <div class="form-check form-check-inline ms-3">
+                            <input type="radio" class="form-check-input" name="rgender" id="rgender1" value="1">
+                            <label for="rgender1" class="form-check-label ms-0">男</label>
+                          </div>  
+                          <div class="form-check form-check-inline ms-5">
+                            <input type="radio" class="form-check-input" name="rgender" id="rgender2" value="2">
+                            <label for="rgender2" class="form-check-label">女</label>
+                          </div>
+                        </div>
+                        <div class="mt-3 mb-0 input-group">
+                          <span for="remail" class="input-group-text"><i class="fa-solid fa-envelope"> email</i></span>
+                          <input type="email" class="form-control" name="remail" id="remail" placeholder="example@gmail.com" required>
+                        </div>
+                        <p class="help-block" id="remail_desc"></p>
+                        <div class="mt-3 mb-0">
+                          <label for="tw_zipcode" class="form-label"><i class="fa-regular fa-address-book fw-bold">配送地址1</i></label>
+                          <input class="js-demeter-tw-zipcode-selector" data-city="#city" data-dist="#dist" placeholder="郵遞區號" id="tw_zipcode"  required/>
+                          <select id="city" placeholder="請選擇縣市" required></select>
+                          <select id="dist" placeholder="請選擇鄉鎮區" required></select>
+                        </div>
+                        <div class="mt-1 mb-0">
+                          <input type="text" class="form-control" name="address" id="address"  required/>
+                        </div>  
+                        <p class="help-block" id="address_desc"></p>
+                        <div class="mt-5">
+                          <div for="reCAPTCHA" class="form-label">我不是機器人(暫用圖檔取代)</div>
+                          <img src="images/reCAPTCHA.JPG" alt="" id="reCAPTCHA" width="50%" class="text-center" required>
+                        </div>
+                      <!-- </div> -->
+                    </td>
+                  </tr>
+                </table>
+                <div class="text-center text-lg-end">
+                  <button type="button" class="btn btn-outline-secondary" id="reset">清空</button>
+                  <!-- <button type="button" class="btn btn-primary" id="register_submit">確認</button> -->
+                  <button type="button" class="btn btn-primary ms-2" id="register_submit">確認送出</button>
+                </div>
+              </form>           
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-outline-secondary" id="reset">清空</button>
+              <button type="submit" class="btn btn-primary" id="submit">確認</button> -->
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Modal register----------------------------------------------------------------ending-->
+
+   <!-- Modal cust_info----------------------------------------------------------------begin-->
+    <div class="modal" id="cust_info" tabindex="-2" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header text-bg-warning">
+              <h1 class="modal-title fs-4" id="exampleModalLabel">會員資料修改</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+              <div class="modal-body">
+                <table class="table table-striped table-hover table-rwd-mod-c">
+                  <tr>
+                    <td>
+                      <fieldset class="border border-3  border-primary rounded-2 p-2">
+                        <legend class="float-none w-auto text-bg-primary rounded-pill ps-3 pe-3 pt-1 pb-1 fs-6">基本認証資料</legend>
+                        <div class="container">
+                          <div class="input-group mb-3">
+                            <!-- <label for="cuser_id" class="form-label">帳號( 手機號碼 )</label> -->
+                            <span class="input-group-text">帳號</span>
+                            <input type="text" name="cuser_id" id="cuser_id" class="form-control">
+                          </div>
+                          <div class="input-group mb-3">
+                            <span for="cpassword" class="input-group-text">密碼</span>
+                            <input type="password" class="form-control" name="cpassword" id="cpassword">
+                          </div>
+                          <div class="demo d-grid mb-4">
+                              <button class="btn btn-outline-primary fs-5 fw-bolder" style="letter-spacing: 25px;" id="CIL_submit">確定</button>
+                          </div>
+                          <hr>
+                          <div class="input-group mt-4 mb-3">
+                            <span for="cpassword1" class="input-group-text">密碼1</span>
+                            <input type="password" class="form-control" name="cpassword1" id="cpassword1" placeholder="8~12字(若未修改,本欄不用輸入)" disabled>
+                          </div>
+                          <p class="help-block" id="cpassword1_desc"></p>
+                          <div class="input-group mb-3">
+                            <span for="cpassword2" class="input-group-text">密碼2</span>
+                            <input type="password" class="form-control" name="cpassword2" id="cpassword2"  placeholder="再輸入一次確認(若未修改,本欄不用輸入)" disabled>
+                          </div>
+                           <p class="help-block" id="cpassword2_desc"></p>
+                          <div class="input-group mb-3 ">
+                            <span for="rname" class="input-group-text"><i class="fa-solid fa-file-signature">中文姓名</i></span>
+                            <input type="text" class="form-control" name="cname" id="cname" placeholder="至少2個中文字,不可填英文姓名"  disabled>
+                          </div>
+                          <p class="help-block" id="cname_desc"></p>
+                          <div class="input-group mb-3">
+                            <span for="cemail" class="input-group-text">email</span>
+                            <input type="email" class="form-control" name="cemail" id="cemail" placeholder="example@gmail.com" disabled>
+                          </div>
+                          <p class="help-block" id="cemail_desc"></p>
+                        </div>
+
+                      </fieldset>
+                    </td>
+                    <!-- <td width="55%"> -->
+                    <td>
+                      <!-- <div class="container"> -->
+                        <fieldset class="border border-3 border-success rounded p-2">
+                          <legend class="float-none w-auto text-bg-success rounded-pill ps-3 pe-3 pt-1 fs-6">配送地址</legend>
+                          <div class="mt-0 mb-0">
+                            <label for="tw_zipcode" class="form-label"><i class="fa-regular fa-address-book fw-bold">配送地址1</i></label>
+                            <input class="js-demeter-tw-zipcode-selector" data-city="#city1" data-dist="#dist1" placeholder="郵遞區號" id="tw_zipcode1" disabled required>
+                            <select id="city1" placeholder="請選擇縣市" disabled required></select>
+                            <select id="dist1" placeholder="請選擇鄉鎮區" disabled required></select>
+                          </div>
+                          <div class="mt-0">
+                            <input type="text" class="form-control" name="address1" id="address1" disabled required>
+                          </div> 
+                          <div class="mt-2">
+                            <label for="tw_zipcode" class="form-label"><i class="fa-regular fa-address-book fw-bold">配送地址2</i></label>
+                            <input class="js-demeter-tw-zipcode-selector" data-city="#city2" data-dist="#dist2" placeholder="郵遞區號" id="tw_zipcode2" disabled>
+                            <select id="city2" placeholder="請選擇縣市" disabled></select>
+                            <select id="dist2" placeholder="請選擇鄉鎮區" disabled></select>
+                          </div>
+                          <div class="mt-0">
+                            <input type="text" class="form-control" name="address2" id="address2" disabled>
+                          </div>                           
+                           <div class="mt-2">
+                            <label for="tw_zipcode" class="form-label"><i class="fa-regular fa-address-book fw-bold">配送地址</i></label>
+                            <input class="js-demeter-tw-zipcode-selector" data-city="#city3" data-dist="#dist3" placeholder="郵遞區號" id="tw_zipcode3" disabled>
+                            <select id="city3" placeholder="請選擇縣市" disabled></select>
+                            <select id="dist3" placeholder="請選擇鄉鎮區" disabled></select>
+                          </div>
+                          <div class="mt-0">
+                            <input type="text" class="form-control" name="address3" id="address3"  disabled>
+                          </div>                           
+                        </fieldset>
+                        <fieldset class="border border-3 border-danger rounded-3 p-2 mt-3">
+                          <legend class="float-none w-auto text-bg-danger rounded-pill  ps-3 pe-3 fs-6">我不是機器人(暫用圖檔取代)</legend>
+                          <!-- <img src="images/reCAPTCHA.JPG" alt="" id="reCAPTCHA" width="40%" class="text-center"> -->
+                          <img src="images/reCAPTCHA.JPG" alt="" id="reCAPTCHA" class="text-center" width="200px;">
+                        </fieldset>
+                      <!-- </div> -->
+                    </td>
+                  </tr>
+                </table>           
+              </div>
+              <div class="modal-footer text-center text-md-end">
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">關閉</button>
+                <button type="button" class="btn btn-primary" id="cust_info_submit" disabled/>確認送出</button>
+              </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal cust_info----------------------------------------------------------------ending-->
+
+    <!-- Modal show_cart----------------------------------------------------------------begin-->
+    <div class="modal fade" id="show_cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header text-bg-success">
+            <h1 class="modal-title fs-5">購物車</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-bg-light">
+              <table class="table table-bordered table-striped-columns table-hover">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">Product</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Product</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1111111111</td>
+                    <td>1111111111</td>
+                    <td>1111111111</td>
+                    <td>1111111111</td>
+                    <td>1111111111</td>
+                    <td>1111111111</td>
+                  </tr>
+                  <tr>
+                    <td>1111111111</td>
+                    <td>1111111111</td>
+                    <td>1111111111</td>
+                    <td>1111111111</td>
+                    <td>1111111111</td>
+                    <td>1111111111</td>
+                  </tr>
+                                    <tr>
+                    <td>1111111111</td>
+                    <td>1111111111</td>
+                    <td>1111111111</td>
+                    <td>1111111111</td>
+                    <td>1111111111</td>
+                    <td>1111111111</td>
+                  </tr>
+                  <tr>
+                    <td>1111111111</td>
+                    <td>1111111111</td>
+                    <td>1111111111</td>
+                    <td>1111111111</td>
+                    <td>1111111111</td>
+                    <td>1111111111</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-info fs-4" data-bs-dismiss="modal">關閉</button>
+              <button type="button" class="btn btn-danger"><i class="fa-solid fa-registered fs-4">結帳</i></button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal show_cart----------------------------------------------------------------ending-->
+
+
+    <!-- Modal show_member----------------------------------------------------------------begin-->
+    <div class="modal fade" id="show_member" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header text-bg-success">
+            <h1 class="modal-title fs-5">會員資料管理</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-bg-light">
+              <table class="table table-bordered table-striped-columns table-hover">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">角色</th>
+                    <th scope="col">帳號<br>(手機)</th>
+                    <th scope="col">姓名</th>
+                    <th scope="col">email</th>
+                    <th scope="col">郵遞<br>區號</th>
+                    <th scope="col">縣<br>市</th>
+                    <th scope="col">鄉鎮<br>區</th>
+                    <th scope="col">地址</th>
+                    <th scope="col">功能</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Customer</td>
+                    <td>0900123456</td>
+                    <td>張春春</td>
+                    <td>kkk@abc.com.tw</td>
+                    <td>438</td>
+                    <td>台中市</td>
+                    <td>西屯區</td>
+                    <td>文心路三段10巷5弄10號8樓B室</td>
+                    <td>
+                      <button class="btn btn-outline-warning">修改</button>
+                      <button class="btn btn-outline-danger">刪除</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Customer</td>
+                    <td>0911123456</td>
+                    <td>江密密</td>
+                    <td>ttt@google.com</td>
+                    <td>569</td>
+                    <td>台中市</td>
+                    <td>外埔區</td>
+                    <td>中正路100號</td>
+                    <td>
+                      <button class="btn btn-outline-warning">修改</button>
+                      <button class="btn btn-outline-danger">刪除</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Customer</td>
+                    <td>0922123456</td>
+                    <td>張曉曉</td>
+                    <td>ooooooooo@yahoo.com.tw</td>
+                    <td>333</td>
+                    <td>台中市</td>
+                    <td>大甲區</td>
+                    <td>經國路2000巷99弄88號</td>
+                    <td>
+                      <button class="btn btn-outline-warning">修改</button>
+                      <button class="btn btn-outline-danger">刪除</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-info" data-bs-dismiss="modal">關閉</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal show_member----------------------------------------------------------------ending-->
+
+<!-- Modal area ====================================================================================================================Modal area end   -->
+</body>
+</html>
