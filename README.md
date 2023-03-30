@@ -72,8 +72,8 @@ Demo Account : demomap/123456Aa
 <img src="gitDemo/gitDemo5.JPG">
 
 ### 6. 管理看板:農業旅遊
-        前端展現技術: Bootstrap
-        前端展現技術: JavaScript,jQuery,AJAX,chart.js(統計圖表框架)
+        前端展現技術: Bootstrap<br>
+        前端展現技術: JavaScript,jQuery,AJAX,leaflet(地圖框架)<br>
         後端展現技術: php,SQL
 <img src="gitDemo/gitDemo7.JPG">
 
@@ -88,48 +88,3 @@ Demo Account : demomap/123456Aa
         前端展現技術: JavaScript,VUE3(前端框架),axios
         後端展現技術: php,SQL
 <img src="gitDemo/gitDemo8.JPG">
-
-<ol>
-    <li><u style="font-size:24px;background-color:#ffff00">首頁</u><br>
-        前端展現技術: Bootstrap Carousel
-        <img src="gitDemo/gitDemo1.JPG">
-    </li>
-    <li><u style="font-size:24px;background-color:#ffff00">線上訂購</u><br>
-        展現技術: Bootstrap Table,Row,col-sm-x,col-md-x相關
-        <img src="gitDemo/gitDemo2.JPG">
-    </li>
-    <li><u style="font-size:24px;background-color:#ffff00">果園導覽</u><br>
-        前端展現技術: CSS IMAGE相關
-        <img src="gitDemo/gitDemo3.JPG">
-    </li>
-    <li><u style="font-size:24px;background-color:#ffff00">會員管理:簡易資料</u><br>
-        前端展現技術: Bootstrap table,modal,switch<br>
-        前端展現技術: JavaScript,jQuery,AJAX<br>
-        後端展現技術: php,SQL
-        <img src="gitDemo/gitDemo4.JPG">
-    </li>
-    <li><u style="font-size:24px;background-color:#ffff00">會員管理:詳細資料</u><br>
-        前端展現技術: Bootstrap ACCORDION搭配table搭配form<br>
-        前端展現技術: JavaScript,jQuery,AJAX<br>
-        後端展現技術: php,SQL
-        <img src="gitDemo/gitDemo5.JPG">
-    </li>
-    <li><u style="font-size:24px;background-color:#ffff00">管理看板:農業旅遊</u><br>
-        前端展現技術: Bootstrap<br>
-        前端展現技術: JavaScript,jQuery,AJAX,leaflet(地圖框架)<br>
-        後端展現技術: php,SQL
-        <img src="gitDemo/gitDemo6.JPG">
-    </li>
-    <li><u style="font-size:24px;background-color:#ffff00">管理看板:統計圖表</u><br>
-        前端展現技術: Bootstrap<br>
-        前端展現技術: JavaScript,jQuery,AJAX,chart.js(統計圖表框架)<br>
-        後端展現技術: php,SQL
-        <img src="gitDemo/gitDemo7.JPG">
-    </li>
-    <li><u style="font-size:24px;background-color:#ffff00">各縣市旅館/分頁顯示: 90~%使用VUE3框架</u><br>
-        前端展現技術: Bootstrap<br>
-        前端展現技術: JavaScript,VUE3(前端框架),axios<br>
-        後端展現技術: php,SQL
-        <img src="gitDemo/gitDemo8.JPG">
-    </li>
-</ol>
