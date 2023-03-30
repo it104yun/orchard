@@ -1,10 +1,4 @@
-<style>
-.demo-title {
-  color: green;
-}
-</style>
-
-# <font color="blue">專案 : orchard / 小農的果園</font>
+# 專案 : orchard / 小農的果園
 <a href="https://lengthiest-cent.000webhostapp.com/orchard/">https://lengthiest-cent.000webhostapp.com/orchard/</a>   
 Demo Account : demomap/123456Aa
 
@@ -53,45 +47,45 @@ Demo Account : demomap/123456Aa
 
 # 簡易畫面展示
 
-#### 1. 首頁
+### 1. 首頁
         前端展現技術: Bootstrap Carousel
 <img src="gitDemo/gitDemo1.JPG">
 
-#### 2. 線上訂購
+### 2. 線上訂購
         展現技術: Bootstrap Table,Row,col-sm-x,col-md-x相關
 <img src="gitDemo/gitDemo2.JPG">
 
-#### 3. 果園導覽
+### 3. 果園導覽
         前端展現技術: CSS IMAGE相關
 <img src="gitDemo/gitDemo3.JPG">
 
-#### 4. 會員管理:簡易資料
-        前端展現技術: Bootstrap ACCORDION搭配table搭配form<br>
-        前端展現技術: JavaScript,jQuery,AJAX<br>
+### 4. 會員管理:簡易資料
+        前端展現技術: Bootstrap ACCORDION搭配table搭配form
+        前端展現技術: JavaScript,jQuery,AJAX
         後端展現技術: php,SQL
 <img src="gitDemo/gitDemo5.JPG">
 
-#### 5. 會員管理:詳細資料
-        前端展現技術: Bootstrap ACCORDION搭配table搭配form<br>
-        前端展現技術: JavaScript,jQuery,AJAX<br>
+### 5. 會員管理:詳細資料
+        前端展現技術: Bootstrap ACCORDION搭配table搭配form
+        前端展現技術: JavaScript,jQuery,AJAX
         後端展現技術: php,SQL
 <img src="gitDemo/gitDemo5.JPG">
 
-#### 6. 管理看板:農業旅遊
-        前端展現技術: Bootstrap<br>
-        前端展現技術: JavaScript,jQuery,AJAX,chart.js(統計圖表框架)<br>
+### 6. 管理看板:農業旅遊
+        前端展現技術: Bootstrap
+        前端展現技術: JavaScript,jQuery,AJAX,chart.js(統計圖表框架)
         後端展現技術: php,SQL
 <img src="gitDemo/gitDemo7.JPG">
 
-#### 7. 管理看板:統計圖表
+### 7. 管理看板:統計圖表
         前端展現技術: Bootstrap<br>
-        前端展現技術: JavaScript,jQuery,AJAX,chart.js(統計圖表框架)<br>
+        前端展現技術: JavaScript,jQuery,AJAX,chart.js(統計圖表框架)
         後端展現技術: php,SQL
 <img src="gitDemo/gitDemo7.JPG">
 
-#### 8. 各縣市旅館/分頁顯示: 90~%使用VUE3框架
+### 8. 各縣市旅館/分頁顯示: 90~%使用VUE3框架
         前端展現技術: Bootstrap<br>
-        前端展現技術: JavaScript,VUE3(前端框架),axios<br>
+        前端展現技術: JavaScript,VUE3(前端框架),axios
         後端展現技術: php,SQL
 <img src="gitDemo/gitDemo8.JPG">
 
