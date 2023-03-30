@@ -5,43 +5,44 @@ Demo Account : demomap/123456Aa
 ## 願景:蒐集小果農的有機水果, 共同上架販賣平台。
 ## 作者:蘇麗雲 Sophia.liyun
 ### <u>技術:</u>
-    <ol>
-        <li>設計風格:RWD,SPA
-        <li>前端畫面:HTML,CSS3,Bootstrap 5.23,</li>
-        <li>前端語言:JavaScript,jQuery-3.6.1,AJAX,VUE3(前端框架),axios,leaflet.js(地圖框架),chart.js(統計圖表框架)</li>
-        <li>後端語言:PHP</li>
-        <li>Database:MySQL</li>
-        <li>LINUX SERVER測試運行環境安裝建議:
-            <ul>
-                <li>OS : UBUNTU(最佳), CENTOS(不建議, 但可運行)
-                <li>Web server : APACHE2.X
-                <li>mySQL GUI管理工具 : phpMyAdmin
-            </ul>
-        </li>
-        <li>Window開發運行環境安裝建議:
-            <ul>
-                <li>OS : Windows10(含)以上
-                <li>WAMP
-            </ul>
-        </li>
-    </ol>
+<ol>
+    <li>設計風格:RWD,SPA
+    <li>前端畫面:HTML,CSS3,Bootstrap 5.23,</li>
+    <li>前端語言:JavaScript,jQuery-3.6.1,AJAX,VUE3(前端框架),axios,leaflet.js(地圖框架),chart.js(統計圖表框架)</li>
+    <li>後端語言:PHP</li>
+    <li>Database:MySQL</li>
+    <li>LINUX SERVER測試運行環境安裝建議:
+        <ul>
+            <li>OS : UBUNTU(最佳), CENTOS(不建議, 但可運行)
+            <li>Web server : APACHE2.X
+            <li>mySQL GUI管理工具 : phpMyAdmin
+        </ul>
+    </li>
+    <li>Window開發運行環境安裝建議:
+        <ul>
+            <li>OS : Windows10(含)以上
+            <li>WAMP
+        </ul>
+    </li>
+</ol>
 
 ### <u>功能:</u>
-    <ol>
-    <li>會員資料CRUD
-    <li>購物車CRUD
-    <li>結帳CRUD
-    <li>旅遊地圖
-    <li>即時統計圖表看版(會員統計,營業額統計)
-    <li>各縣市旅館分頁查詢
-    </ol>
+<ol>
+ <li>會員資料CRUD
+ <li>購物車CRUD
+ <li>結帳CRUD
+ <li>旅遊地圖
+ <li>即時統計圖表看版(會員統計,營業額統計)
+ <li>各縣市旅館分頁查詢
+</ol>
 
 ### <u>更新時程及內容</u>
-    |NO |PUSH DATE|TOPIC|CONTENT|
-    |-----|--------|--------|----|
-    |1|2023/3/30|首次上傳Git||
-    |2| ...     |||
-    |3| ...     |||
+
+ |NO |PUSH DATE|TOPIC|CONTENT|
+ |-----|--------|--------|----|
+ |1|2023/3/30|首次上傳Git||
+ |2| ...     |||
+ |3| ...     |||
 
 ---
 # 簡易畫面展示
