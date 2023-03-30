@@ -41,11 +41,11 @@ Demo Account : demomap/123456Aa
  |NO |PUSH DATE|TOPIC|CONTENT|
  |-----|--------|--------|----|
  |1|2023/3/30|首次上傳Git||
- |2| ...     |||
+ |2|2023/3/30|README.md修正||
  |3| ...     |||
 
 ---
-# <font color=Blue>簡易畫面展示</font>
+# 簡易畫面展示
 
 ### 1. 首頁
         前端展現技術: Bootstrap Carousel
@@ -63,7 +63,7 @@ Demo Account : demomap/123456Aa
         前端展現技術: Bootstrap ACCORDION搭配table搭配form
         前端展現技術: JavaScript,jQuery,AJAX
         後端展現技術: php,SQL
-<img src="gitDemo/gitDemo5.JPG">
+<img src="gitDemo/gitDemo4.JPG">
 
 ### 5. 會員管理:詳細資料
         前端展現技術: Bootstrap ACCORDION搭配table搭配form
