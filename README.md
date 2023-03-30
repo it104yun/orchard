@@ -50,8 +50,8 @@ Demo Account : demomap/123456Aa
 # 簡易畫面展示
 
 ### 1. 首頁
-        前端展現技術: Bootstrap Carousel
-        前端展現技術: JavaScript,jQuery,AJAX
+        前端展現技術: Bootstrap Carousel,modal搭配table、form、
+        前端展現技術: JavaScript,jQuery,AJAX,zipcode-selector.js(郵遞區號3+2)
         後端展現技術: php,SQL
 <img src="gitDemo/gitDemo1.JPG">
 <img src="gitDemo/gitDemo1_1.JPG">
