@@ -75,7 +75,7 @@ Demo Account : demomap/123456Aa
         前端展現技術: Bootstrap 
         前端展現技術: JavaScript,jQuery,AJAX,leaflet(地圖框架) 
         後端展現技術: php,SQL
-<img src="gitDemo/gitDemo7.JPG">
+<img src="gitDemo/gitDemo6.JPG">
 
 ### 7. 管理看板:統計圖表
         前端展現技術: Bootstrap 
