@@ -45,7 +45,7 @@ Demo Account : demomap/123456Aa
  |3| ...     |||
 
 ---
-# 簡易畫面展示
+# <font color=Blue>簡易畫面展示</font>
 
 ### 1. 首頁
         前端展現技術: Bootstrap Carousel
