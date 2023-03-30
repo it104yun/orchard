@@ -47,9 +47,9 @@ Demo Account : demomap/123456Aa
  |3| ...     |||
 
 :::
-# <font style="color:#ff4000"><u>簡易畫面展示</u></font>
+# 簡易畫面展示
 <ol>
-    <li><font style="background:#ffff00;color:blue;"><首頁</font><br>
+    <li>## 首頁<br>
         前端展現技術: Bootstrap Carousel
         <img src="gitDemo/gitDemo1.JPG">
     </li>
