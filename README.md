@@ -42,14 +42,21 @@ Demo Account : demomap/123456Aa
  |-----|--------|--------|----|
  |1|2023/3/30|首次上傳Git||
  |2|2023/3/30|README.md修正||
- |3| ...     |||
+ |3|2023/3/30|README.md修正,增加會員CRUD的圖片||
+ |4| ...     |||
+ |5| ...     |||
 
 ---
 # 簡易畫面展示
 
 ### 1. 首頁
         前端展現技術: Bootstrap Carousel
+        前端展現技術: JavaScript,jQuery,AJAX
+        後端展現技術: php,SQL
 <img src="gitDemo/gitDemo1.JPG">
+<img src="gitDemo/gitDemo1_1.JPG">
+<img src="gitDemo/gitDemo1_2.JPG">
+<img src="gitDemo/gitDemo1_3.JPG">
 
 ### 2. 線上訂購
         展現技術: Bootstrap Table,Row,col-sm-x,col-md-x相關
