@@ -78,7 +78,7 @@ Demo Account : demomap/123456Aa
         後端展現技術: php,SQL
 <img src="gitDemo/gitDemo5.JPG">
 
-### 6. 管理看板:農業旅遊
+### 6. 農業旅遊:地圖運用
         前端展現技術: Bootstrap 
         前端展現技術: JavaScript,jQuery,AJAX,leaflet(地圖框架) 
         後端展現技術: php,SQL
